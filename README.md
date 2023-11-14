@@ -12,7 +12,7 @@
 
 * The greatest decrease in Profit/Losses (date and amount) over the entire period.(Work in progress)
 
-[image 1](images/Screenshot%202023-11-14%20at%2023.12.52.png)
+![image 1](images/Screenshot%202023-11-14%20at%2023.12.52.png)
 
 ## [GitHub Repo](https://github.com/hrehman12/Console-Finances)
 
