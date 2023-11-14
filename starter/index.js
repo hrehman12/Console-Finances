@@ -1,7 +1,7 @@
-var finances = [
-  ['Jan-2010', 867884],
-  ['Feb-2010', 984655],
-  ['Mar-2010', 322013],
+var finances = [             
+  ['Jan-2010', 867884],     
+  ['Feb-2010', 984655],    
+  ['Mar-2010', 322013],  
   ['Apr-2010', -69417],
   ['May-2010', 310503],
   ['Jun-2010', 522857],
@@ -86,3 +86,38 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// calculate number of months in database
+let numberOfMonths= finances.length;
+console.log(`Total months = ${numberOfMonths}`)
+
+// calculate net total amount of profits and losses
+
+let total = 0;
+for (let i = 0; i < finances.length; i++){
+    total += finances[i][1];
+}
+console.log(`Total profit and loss = ${total}`)
+
+// average of the changes in profits and losses
+
+let totalChange = 0
+for (let i = 0; i < finances.length; i++){
+    // console.log(finances[i][1]);
+    totalChange -= finances[i][1]
+}
+
+// let averageChange = total/(numberOfMonths -1)
+console.log(totalChange)
+let averageChange = totalChange/(numberOfMonths -1)
+
+console.log(`Average Change: ${averageChange}`)
+
+
+// The greatest increase in Profit/Losses
+// let increase;
+// for (let i = 0; i < finances.length; i++){
+//    increase = Math.max(finances[i][1])
+// }
+// console.log(increase)
+
